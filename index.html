@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX</title>
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://kit.fontawesome.com/f3e790f1dc.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagenes/logoA.png">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_8o71k5SIU50M3qrFo3csr");
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                var templateParams = {
+                name : document.getElementById('name'),
+                email : document.getElementById('email'),
+                company : document.getElementById('company'),
+                phone : document.getElementById('phone'),
+                message : document.getElementById('message')
+                };
+
+                emailjs.sendForm('murielvbressan@gmail.com', 'template_zcjdto3', templateParams)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="index.html">
+                <img src="imagenes/g96.png" alt="logo apex" width="200">
+            </a>
+
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto justify-content-end ">
+
+                    <div class="bordes">
+                        <li class="nav-item "><a class="nav-link" href="#form"><button type="button"
+                                    class="btn btn-outline-danger "><i class="fas fa-clipboard-list"></i>
+                                    COTIZACIÓN</button> </a> </li>
+                    </div>
+                    <li class="nav-item"><a class="nav-link" href="tel:+54 9 261 718-8859" target="_blank"> <button
+                                type="button" class="btn btn-outline-danger"><i class="fas fa-phone-alt"></i>
+                                LLAMAR</button> </a> </li>
+                    <li class="nav-item "><a class="nav-link" href="galeria.html" target="_blank"><button type="button"
+                                class="btn btn-outline-danger "><i class="far fa-images"></i>
+                                NUESTROS TRABAJOS</button> </a> </li>
+
+                    <!-- REDES SOCIALES -->
+                    <li class="verticalLine"></li>
+                    <div class="margen-redes">
+                        <div class="row ">
+                            <li class="nav-item col position-relative"><a class="nav-link"
+                                    href="https://www.instagram.com/apexgrafica/" target="_blank"> <button type="button"
+                                        class="btn btn-outline-danger "> <i class="fab fa-instagram"></i></button></a>
+                            </li>
+
+                            <li class="nav-item col position-relative "><a class="nav-link"
+                                    href="https://api.whatsapp.com/send?phone=5492617188859&text=Hola%20Apex%20Gr%C3%A1fica%20necesito%20un%20presupuesto.">
+                                    <button type="button" class="btn btn-outline-danger"> <i
+                                            class="fab fa-whatsapp"></i></button></a></li>
+
+                            <li class="nav-item col position-relative"><a class="nav-link"
+                                    href="https://www.facebook.com/apexgrafica" target="_blank"></i><button
+                                        type="button" class="btn btn-outline-danger"> </i>
+                                        <i class="fab fa-facebook-f"></i></button></i></a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- FIN NAV -->
+    <!-- CAROUSEL -->
+    <header>
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/carousel1_2.svg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/carousel.jpg" class="d-block w-100 " alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/carousel4.jpg" class="d-block w-100 " alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/carousel5.jpg" class="d-block w-100 " alt="">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </header>
+    <!-- FIN CAROUSEL -->
+
+
+    <main class="mainbg">
+        <!-- INICIO CARDS -->
+
+        <div class="center subtit mb-5 p-3 ">
+            <h2 class="tpte center mt-3 ">LA GRÁFICA PARA TU EMPRESA</h2>
+            <div class="container">
+<div class="row">
+            <div class="col-md-2 col-lg-2 mt-3 btn btn-primary card cardbtn">
+
+                <h3 class="card-title pt-2"> CARTELERIA/<br/>GIGANTGRAFIAS</h3>
+                <a href="galeria.html" target="_blank"> <img class="card-img-top  imagencard2 p-2"
+                        src="imagenes/cards/cartelgim.jpg" alt="Card image cap"> </a>
+                <div class="card-body">
+                </div>
+
+            </div>
+
+
+            <div class="col-md-2 col-lg-2  mt-3  btn btn-primary cardbtn card ">
+                <h3 class="card-title mt-3"> IMPRESIONES</h3>
+                <a class="" href="galeria.html" target="_blank"><img class="card-img-top imagencard p-3"
+                        src="imagenes/cards/impresiones_0.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                </div>
+            </div>
+
+
+            <div class="col-md-2 col-lg-2  mt-3 btn btn-primary cardbtn card ">
+                <h3 class="card-title mt-2 rotulacion"> ROTULACION VEHICULAR</h3>
+                <a href="galeria.html" target="_blank"> <img class="card-img-top imagencard p-3"
+                        src="imagenes/cards/rot_1.jpg" alt="Card image cap"> </a>
+                <div class="card-body">
+                </div>
+            </div>
+
+
+           
+
+
+            <div class="card col-md-2 col-lg- mt-3  btn-primary cardbtn">
+                <h3 class="card-title mt-4">CORPOREOS</h3>
+                <a href="galeria.html" target="_blank"> <img class="card-img-top imagencard p-3"
+                        src="imagenes/cards/corporeos_2.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div class="row center">
+            <div class=" offset-sm-0 col-lg-3 col-sm-12 align-items-start informacion">
+                <div class="col">
+                    <h2 class="infomargintop">Contacto</h2>
+                    <a href="tel:+54 9 261 718-8859"><button type="button"
+                            class="btn2 buttoninfo btn-dark btn-lg ">LLAMAR
+                            AHORA</button></a>
+                    <p class="infomargintop">+54 9 261 718-8859</p>
+                </div>
+
+            </div>
+            <div class=" col align-items-center col-sm-12 col-lg-3 informacion">
+                <div class="info">
+                    <h2 class="infomargintop">Dirección</h2>
+                    <div class="mx-auto"><div class=""><iframe  height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=Sarmiento%20380%205519%20San%20Jose%20Mendoza%20Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href=""></a><br></div></div>
+                  
+                    <p class="infomargintop">Sarmiento 380 <br>
+                        5519 San Jose <br>
+                        Mendoza
+                        Argentina</p>
+                </div>
+
+            </div>
+            <div class=" col-sm-12 align-items-end col-lg-3 informacion">
+                <div class="">
+                    <h2 class="infomargintop">Horario de atención</h2>
+                    <p> Lunes a Viernes <br>
+                        9:00–13:00 | 16:00–19:30 <br>
+                    <p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="formbg" id="form">
+            <section class="get-in-touch">
+                <h2 class="pedicotizacion mb-5 mt-5 center">ENVIANOS TU PEDIDO</h2>
+                <form class="contact-form row" action="email.php" method="post">
+                    <div class="form-field col-lg-6 form-floating">
+                        <input id="name" class="input-text js-input" type="text" name="name" placeholder="Nombre" required>
+                        <label class="sr-only" for="name">Nombre</label>
+                    </div>
+                    <div class="form-field col-lg-6 form-floating">
+                        <input type="text" name="email" class="input-text js-input" type="email" placeholder="E-mail" required>
+                        <label class="sr-only" for="email">E-mail</label>
+                    </div>
+                    <div class="form-field col-lg-6 form-floating">
+                        <input id="company" name="company" 
+                        class="input-text js-input" type="text" placeholder="Empresa" required>
+                        <label class="sr-only" type="text" for="company">Empresa</label>
+                    </div>
+                    <div class="form-field col-lg-6 form-floating">
+                        <input id="telefono" name="telefono" class="input-text js-input" type="text" placeholder="Teléfono" required>
+                        <label class="sr-only" for="telefono">Teléfono</label>
+                    </div>
+                    <div class="form-field col-lg-12 form-floating">
+                        <input id="message" name="message" class="input-text js-input" type="text" placeholder="Mensaje" required>
+                        <label class="sr-only" for="message">Mensaje</label>
+                    </div>
+                    <div class="form-field col-lg-12 form-floating">
+                        <input class="btn submit-btn btn-outline-danger"  type="submit" name="submit" value="Enviar">
+                    </div>
+                </form> 
+            </section>
+        </div>
+          </div>
+
+    </main>
+
+    <footer>
+        <h4>APEX &copy; | Web por <a href="https://www.linkedin.com/in/muriel-bressan/">muriel bressan</a></h4>
+    </footer>
+
+
+</body>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

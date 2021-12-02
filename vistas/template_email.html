@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style type="text/css"> 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+        main {
+          text-align: initial;
+        }
+  
+        h1 {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: bolder;
+          text-align: center;
+          padding: 2rem;
+          background-color: #ac3036 !important;
+          color: white !important;
+          margin: 0;
+        }
+  
+        section{
+            background-color: #202020 !important;
+            color: white !important;
+            padding: 1rem;
+        }
+  
+        h4{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 2rem;
+            font-size: 1.5rem;
+            color: white !important;
+        }
+        .textcenter {
+          text-align: center;
+        }
+        footer{
+            background-color: #161515;
+            text-align: center;
+            color: white !important;
+            height: 5rem;
+        }
+        h3 {
+            padding: 2rem;
+            margin: 0%;
+        }
+        a, .mensaje {
+            text-decoration: none;
+            color: #ac3036 !important;
+        }
+      </style>
+
+    <title>Contacto</title>
+
+  </head>
+  <body>
+    
+    <main>
+      <div class="textcenter">
+          
+            <h1>Solicitud web Apex Gráfica</h1>
+          
+        </div>
+        <section>
+          <div>
+            <h4>Nombre: %nombre%</h4>
+          </div>
+          <div>
+            <h4>Empresa: %company%</h4>
+          </div>
+          <div>
+            <h4>Email:  %email% </h4>
+          </div>
+          <div>
+            <h4>Teléfono: %telefono%</h4>
+          </div>
+          <div>
+            <h4><span class="mensaje"> Mensaje: </span> %message%</h4>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+        <h3>Apex 2021 &copy;</h3>
+    </footer>
+  </body>
+</html>

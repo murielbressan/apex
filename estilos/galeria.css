@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+@media (max-width: 699px)
+{
+    /* NAV */
+.active {
+    color: black !important;
+    background-color: #B90B14 !important;
+}
+
+body {
+font-family: 'Oswald';
+margin: 0px;
+padding: 0px;
+
+
+}
+
+/* Main */
+
+.galeria {
+    margin: 0 !important;
+}
+
+main {
+    text-decoration: none !important;
+    color: white;
+    text-shadow: 2px 5px 5px black;
+    font-family: 'Oswald', sans-serif;
+    padding: 0px;
+    text-align: center;
+    padding-right: 0 !important;
+    background-color: black;
+    background-image: url(../imagenes/fondo.png);
+    background-repeat: unset;
+    background-size: initial;
+  
+}
+
+h2 {
+    font-size: 8vh;
+}
+
+.div{
+    padding-right: 0px !important;
+
+}
+
+.prg {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+}
+
+}  
+
+@media (min-width: 700px) {
+
+
+/* NAV */
+.active {
+    color: black !important;
+    background-color: #B90B14 !important;
+}
+
+body {
+font-family: 'Oswald';
+margin: 0px;
+padding: 0px;
+
+}
+
+/* Main */
+
+.galeria {
+    margin: 0 !important;
+}
+
+main {
+    text-decoration: none !important;
+    color: white;
+    text-shadow: 2px 5px 5px black;
+    font-family: 'Oswald', sans-serif;
+    padding: 0px;
+    text-align: center;
+    padding-right: 0 !important;
+    
+    background-repeat: unset;
+    background-size: initial;
+  
+}
+
+h2 {
+    font-size: 8vh;
+}
+
+.div{
+    padding-right: 0px !important;
+
+}
+
+.prg {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+}
+.zoom {
+    
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  
+  }
+
+ 
+}
+ 
+
